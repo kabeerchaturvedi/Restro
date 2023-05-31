@@ -5,6 +5,7 @@ import OrderTrack from "./components/OrderTracking/OrderTrack";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
+import './App.css';
 
 
 function App() {
@@ -12,14 +13,15 @@ function App() {
     <div className="App">
       <Router>
         <div>
+          <Header />
           <Routes>
             <Route exact path="/cart" Component={Cart} />
-            <Route exact path="/footer" Component={Footer} />
-            <Route exact path="/" Component={Header} />
-            <Route exact path="/Menu" Component={Menu} />
+            <Route exact path="/" Component={Menu} />
             <Route exact path="/OrderTrack" Component={OrderTrack} />
           </Routes>
+          <Footer/>
         </div>
+        
       </Router>
     </div>
   );
