@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import './header.css';
 // import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
   
 
   return (
-    <div>
+    <div className="header">
       <Navbar bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto">
