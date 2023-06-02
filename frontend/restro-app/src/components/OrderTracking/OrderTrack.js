@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
- const OrderTrack = () => {
+const OrderTrack = () => {
   return (
-    <div>OrderTrack</div>
-  )
-}
+    <div>
+      <h1>Order Tracking</h1>
+      <p>Track your order here.</p>
+    </div>
+  );
+};
 
 export default OrderTrack;
